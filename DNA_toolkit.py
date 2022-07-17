@@ -34,6 +34,9 @@ def GC_content_subseq(seq,k):
         subseq = seq[i:i+k]
         result.append(GC_content(subseq))
     return result
+from Bio.Seq import Seq
+def translation (seq):
+    return seq.translate()
 
 from Bio import SeqIO
 
